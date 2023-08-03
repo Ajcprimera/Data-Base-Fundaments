@@ -1,0 +1,10 @@
+query: los querys o consultas, son muy fundamentales en una
+base de datos, ya que facilita de muy buena manera, los 
+procesos de una empresa.
+
+ETL
+EXTRACT-TRANSFORM-LOAD
+
+el etl hace parte del proceso de integración de datos, mas 
+aun es un componente muy importante que completa el resultado 
+final en la relación de aplicaciones y sistemas

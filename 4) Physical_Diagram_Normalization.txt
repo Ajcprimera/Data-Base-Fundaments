@@ -1,0 +1,20 @@
+Normalizacion: como si nombre lo indica es dejar todo de 
+manera normal, respetando eso si las reglas de codd y tambien
+nos ayudan a separar componentes de una base de datos
+
+tenemos varias formas normales estas son reglas,estos son:
+
+*Primera forma normal(1FN): atributo atomicos, esto quiere 
+decir que no acepta campos repetidos
+
+*Segunda forma normal(2FN): esta debe cumplir 1FN, y cada 
+campo de esta debe contener una clave unica
+
+*Tercera forma normal(3FN): debe cumplir con 1FN y 2FN,
+ademas los campos que no son clave no deben tener dependecias
+
+*Cuarta forma normal (4FN): debe cumplir con 1FN, 2FN y 3FN,
+ademas los campos multievaluados se pueden identificar por 
+una clave unica
+
+Nota: ir a la carpeta de Normalizacion

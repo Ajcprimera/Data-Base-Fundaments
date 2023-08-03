@@ -1,0 +1,22 @@
+Que es una entidad: es un objeto, parecido a lo que se ve
+en POO, y estos contienen lo que son atributos
+
+- Las entidades se encierran en rectangulos
+- Las entidades debiles se les conoce ya que estas son
+dependientes de una entidad fuerte
+- de las entidades debiles podemos encontrar 2 tipo:
+1. las debiles por entidad, la cual estas se diferencian entre
+si por la clave de la entidad fuerte
+2. las debiles por existencia, las cuales se le puede ser 
+asignada una clave propia
+
+Atributos: son las caracteristica que definen que es lo
+que hace el objeto o la entidad
+
+-los atributos estan encerrados en circulos
+-los atributos que estan encerrados en doble ciculos, se les
+como atributos multivaluados, es decir,, que tienen varios 
+valores
+-los atributos compuestos, son los que tienen varios atributos
+-los atributos encerrados con un circulo punteados, se les 
+conoce como atributos debiles, 

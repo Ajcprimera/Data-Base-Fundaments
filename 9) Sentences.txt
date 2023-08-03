@@ -1,0 +1,110 @@
+Las sentencia nos ayudan a obtener los datos de una base de 
+datos, esto nos ayuda cuando vayamos a realizar reportes
+
+* joins: los joins nos permite extraer informacion mediante 
+mediante la union de la tabla, esta union mayormente se hace
+mediante las llaves foraneas que la tablas de datos
+
+si deseas visualizar los diferentes tipos de joins debe 
+ver las imagenes de sql_joins
+
+* where: esta sentencia nos ayuda a filtrar tuplas o registros 
+
+en la sentencia where tambien podemos aplicar diferentes 
+propiedades como lo son:
+
+- like: nos ayuda a traer informacion la cual solo conocemos 
+una parte de la informacion 
+
+ej: SELECT *
+FROM post 
+WHERE titulo LIKE  "%escandalo%";
+
+aqui estamos diciendo que seleccione todo de la tabla post
+y en la columna titulo selecciona los que tenga la palabra 
+escandalo los porcentaje indica que busque desde el 
+inicio hasta el final 
+
+nota: el like nos ayuda a filtrar con cadenas de texto y con 
+respecto a fechas podemos filtrar mediante cadenas de texto 
+
+- between: nos ayuda a buscar registros entre un rango de 
+entre lo que vayamos a buscar 
+
+ej: SELECT *
+FROM post 
+WHERE fecha_publicacion BETWEEN '2023-02-01' and 2025-12-31;
+
+aqui estamos diciendo que busque las fechas de publicacion 
+entre las que vayamos a indicar
+
+nota: los negadores de estos operadores son NOT, NOT LIKE, 
+NOT BETWEEN -AND-
+
+where nulo: el mull es asignado cuando algunos campos de la
+no es rellenado para saber si un algun campo de la tabla es 
+nulo no podemos usar "=" sino que debemos usar el IS
+
+ej: WHERE usuario_id is null;
+
+* group by: nos permite agrupar los datos cuando deseemos
+consultar en la base de datos
+
+ej: SELECT estatus, COUNT(*) post_quantity
+FROM post
+GROUP BY estatus;
+
+aqui estamos diciendo que seleccione de la columna estatus 
+y las cuente y lo va a llamar como post_quantity de la tabla 
+post, luego va a agrupar cuantos estan activos e inactivos 
+de la tabla gracias a la sentecia count 
+
+Nota: group by nos permite agrupar por varios criterios que 
+nosotros le vayamos a dar
+
+* order by: esta sentencia nos ayuda a ordenar los bajos los 
+criterios, ademas order by nos permite ordenarlo de la manera 
+que deseemos con los sgtes criterios 
+
+- ASC: ordena los datos de forma ascendente
+- DESC: los ordena de forma descendente
+- LIMIT: nos ayuda limitar la cantidad de datos que nos
+muestra
+
+ej: SELECT *
+FROM post
+ORDER BY fecha_publicacion ASC
+LIMIT 5;
+
+aqui estamos ordenando los datos mediante de la fecha_publicacion
+de forma ascendente y ademas limitamos la cantidad de 
+elementos que deseamos ver a 5
+
+* HAVING: este es similar a where, sin embargo, having se 
+usa para tuplas agrupadas
+
+ej: SELECT MONTHNAME (fecha_publicacion) AS post_month, estatus, COUNT(*) AS post_quantity
+FROM post
+GROUP BY estatus, post_month
+HAVING post_quantity > 1
+ORDER BY post_month;
+
+aqui estamos seleccionando fecha_publicacion y el estatus,
+luego lo agrupamos y aqui es donde entra el having, ya 
+que como lo tenemos agrupados y ademas contados, nos 
+permite usar el having para filtrar que la cantidad de 
+post sea mayor a 1 y por ultimo lo ordena por post_month de 
+forma ascendente
+
+Pregntas que debemos hacernos cuando vayamos a realizar un
+query:
+
+- SELECT: Lo que quieres mostrar
+- FROM: De dónde voy a tomar los datos
+- WHERE: Los filtros de los datos que quieres mostrar
+- GROUP BY: Los rubros por los que me interesa agrupar la 
+información
+- ORDER BY: El orden en que quiero presentar mi información
+- HAVING: Los filtros que quiero que mis datos agrupados 
+tengan
+- LIMIT: La cantidad de registros que quiero

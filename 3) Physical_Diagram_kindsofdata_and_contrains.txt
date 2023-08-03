@@ -1,0 +1,69 @@
+Tipos de datos:
+Texto: en bases de datos podemos encontrar varios tipos como
+lo son:
+
+*Char: son cadenas de caracteres estaticos, eso quiere decir
+que almacenamos una cadena de 8 caracteres, este va a quedar
+almacenado con esa cantidad
+
+*Varchart: son cadenas de caracteres dinamicos, eso quiere
+decir que el almacenamiento de esta cadena de caracteres 
+puede ser modificada dependiendo de la cantidad de caracteres
+que vayamos almacenando(tiene un limite de 255 caracteres)
+
+*Text: esta nos permite almacenar cadenas de texto muy grandes
+(almacena mas de 500 caracteres)
+
+Numericos: en estos podemos encontrar los sgtes:
+
+*Integer: Son los numero tipo entero
+
+*Bigint: cuando vamos a declarar numeros enteros demasiado 
+grandes
+
+*Smallint: cuando vamos a declarar numeros enteros demasiado
+pequeños (como de 99 o menos)
+
+*Decimal: son los numeros de caracter decimal, nos ayuda a
+tener mas precision en algun calculo numeriico
+
+Fecha/hora: de estos tipos de datos tenemos:
+
+*Date: este contiene lo que son fechas año, mes y dia
+
+*Time: son los que contiene la hora (hora y minutos)
+
+* Datetime o Timestamp: son aquellos que contiene la fecha
+y la hora hasta incluso los milisegundos
+
+Logicos: en estemos el sgte:
+
+*Boolean: es un tipo de dato binario (verdadero o falso)
+
+Contrains: Esto es que conocemos como restricciones, esto 
+lo podemos aplicar al tipo de dato
+
+*Not null: nos asegura en que una columna no contenga valores
+nulos
+
+*Unique: Nos ayuda a que los valores o datos de las 
+columnas no se repitan
+
+*Primary key: esta combina Not null y Unique, un ejemplo
+de esto pueden ser los reistros de una tabla, tambien nos
+ayuda en la union de una tabla con otra o tambien una
+entidad con otra y de esta manera lo convertimos en un 
+indice
+
+*Foreign key: quiere decir que cuando juntamos 2 tablas, la
+primary key de una tabla, sea la koreign key de la otra tabla
+
+*Check: nos ayuda a que el valor de la columna se cumpla bajo
+una condicion dada
+
+*Default: Nos colocar un valor por defecto cuando no hay valor
+especifica, este maormente es null, sin embargo nosotros
+podemos modificar el valor por defecto
+
+*Index: Nos permite hacer busquedas mas rapidas en nuestra 
+tabla de datos y se crea por columnas

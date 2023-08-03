@@ -1,0 +1,24 @@
+DDL (Data Definition Language): este lenguaje nos ayuda a crear
+la estructura de una bases de datos, los simientos, bases u
+entidades de una bases de datos
+
+comandos:
+
+*Create: Nos ayuda a crear bases de datos, tablas, vistas, 
+indices, etc.
+
+*Alter: Nos permite modificar una columna, algun tipo de dato
+u entidad
+
+*Drop: Nos ayuda a borrar cualquir 
+tipo de dato, columnas,
+hasta incluso toda la base de datos(Mucho cuidado al usarla)
+
+- Las que se manipulan en DDL create son database, table,
+view
+
+*Tabla o tables: son la traduccion de sql de las entidades
+
+*View: es la proyeccion de los datos de la base de datos 
+de forma que sea entendible
+

@@ -1,0 +1,33 @@
+Que son: estas son las que nos ayuda crear realciones entre 
+entidades y esta definida por un rombo, un ejemplo de esto
+es teniendo 2 entidades como lo pueden ser automovil y dueño
+y una manera en que loa podemos relacionar es mediante una 
+"relacion" llamado tiene, mayormente las realciones son
+hechas mediante verbos.
+
+Cardinalidad: es una propieda que nos permite saber la
+cantidad con la que puede estar relacionado una entidad
+
+* 1 a 1: significa que se relaciona de uno solo a otro 
+de igual manera de una sola cantidad, ej. una persona tiene
+una serie de datos de contacto
+
+* 0 a 1: significa que puede haber el caso de que exista 
+uno o ninguno de los lados, ej. la sesion actual debe tener 
+un usuario, sin embargo, este usuario quizas no este en 
+sesion este momento, es por eso que se define 0 a 1
+
+* 1 a N: significa que de un lado tenemos 1 pero del otro 
+podemos tener varios, ej. una persona puede tener varios 
+automoviles
+
+* 0 a N: siginifica que puede haber ninguno o talvez ninguno
+y del otro lado muchos, ej. una habitacion de paciente
+puede tener o no pacientes y cuando un paciente se le es 
+asignado una habitacion, esta puede tener o no pacientes
+
+Nota: ver la imagen de representacion de cardinalidad
+
+cardinalidad N a N: significa que tiene a muchos tanto de un
+lado como del otro, ej. un alumno puede estar inscrito en 
+varias clases, pero tambien una clase contiene varios alumnos

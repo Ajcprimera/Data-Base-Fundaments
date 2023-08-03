@@ -1,0 +1,12 @@
+RDBMS(RELATIONAL DATABASE MANAGEMENT SYSTEM): es un programa
+que no permite realiza las reglas de codd, tanto de manera
+teorica y progrmatica
+
+Entre estos tenemos:
+*MySQL
+*PostgreSQL
+*ORACLE
+
+Nota: para esta guia de estudio se va a estar utilizando 
+MySQL, Investigar como instalar esta Base de datos,
+dependiento de tu sistema oprativo

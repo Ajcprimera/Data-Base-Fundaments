@@ -1,0 +1,4 @@
+Clientes grafico(WORKBENCH Mysql): es una forma grafica de ver
+como trabaja nuestra base de datos internamente, una forma de
+entenderlo es mediante una tabla, ademas de editar y otras
+mas cosas de la base de datos
